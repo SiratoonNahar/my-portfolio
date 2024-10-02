@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .lst_nme {
+    background: none;
+    color: white;
+}
+
+.div-container {
+    max-width: 1300px;
+    margin: auto;
+    /* background-color: yellow; */
+
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgb(243, 243, 243);
+
+}
+
+body.dark-mode .header {
+    background-color: #121212;
+    /* Dark background for dark mode */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.frst_nme {
+    color: #ea0c14;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+
+}
+
+.lst_nme {
+    color: black;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+
+}
+
+.navbar a {
+    font-weight: 900;
+    margin: 15px 15px;
+    padding: 7px 15px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    background-color: #e2700c;
+}
+
+.toggle-btn {
+    padding: 5px 20px;
+    padding-left: 30px;
+    cursor: pointer;
+    background-color: #464545;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.toggle-btn i {
+    margin-right: 10px;
+}
+
+#menu-icon {
+    display: none;
+}
+
+/* Home-Section Style */
+.home {
+    margin-bottom: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-img img {
+    margin-top: 5rem;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: #2d2c2c 0px 0px 25px;
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
+:root {
+    --shadow-light: rgba(0, 0, 0, 0.2);
+    --shadow-medium: rgba(0, 0, 0, 0.3);
+    --shadow-dark: rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode {
+    --shadow-light: rgba(255, 255, 255, 0.2);
+    --shadow-medium: rgba(255, 255, 255, 0.3);
+    --shadow-dark: rgba(255, 255, 255, 0.4);
+}
+
+.home-img img:hover {
+    box-shadow:
+        0px 0px 25px var(--shadow-light),
+        0px 0px 35px var(--shadow-medium),
+        0px 0px 45px var(--shadow-dark);
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+}
+
+.home-content h4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+/* .home-content h4:nth-of-type(2) {
+    margin-bottom: 10rem;
+} */
+
+span {
+    color: rgb(9, 184, 184);
+}
+
+.multiple-text {
+    white-space: nowrap;
+    /* border-right: 1px solid black; */
+    /* Blinking cursor */
+    overflow: hidden;
+    /* Hides overflowing text */
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.fa-brands{
+    margin-right: 1.5rem;
+}
+
+body.light-mode .fa-brands{
+    color: #0963ea;
+}
+body.dark-mode .fa-brands{
+    color: #e0e0e0;
+}
+/* About-Section style */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    
+}
+.about-content{
+    margin-bottom: 10rem;
+} 
+
+.about-content h2{
+
+    margin-top: 2rem;
+}
+
+.about_img img {
+    margin-right: 5rem;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 5px;
+    object-fit: cover;
+    border: rgb(44, 42, 42);
+    cursor: pointer;
+    box-shadow: #2d2c2c 0px 0px 25px;
+    transition: 0.4s ease;
+}
+
+.about_img img:hover {
+    box-shadow:
+        0px 0px 25px var(--shadow-light),
+        0px 0px 35px var(--shadow-medium),
+        0px 0px 45px var(--shadow-dark);
+}
+
+.heading {
+    font-size: 3.4rem;
+    text-align: left;
+}
+
+.about-content {
+    padding: 0 4rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.1rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}   
+
+.hire_me,
+.resume {
+    margin-right: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hire_me {
+    background-color: #e53535;
+    border: none;
+}
+
+.hire_me:hover {
+    background-color: #ef8e32;
+}
+
+.resume {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* Light mode styles */
+.light-mode .resume {
+    color: black;
+    /* Text color */
+}
+
+.light-mode .resume::before {
+    border: 1px solid black;
+}
+
+/* Dark mode styles */
+.dark-mode .resume {
+    color: white;
+}
+
+.dark-mode .resume::before {
+    border: 1px solid white;
+
+}
+
+
+.resume::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+
+.light-mode .resume:hover {
+    color: white;
+}
+
+.light-mode .resume:hover::before {
+    background-color: #333 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+
+
+.dark-mode .resume:hover {
+    color: black;   
+}
+
+
+.dark-mode .resume:hover::before {
+    background-color: white !important;
+    color: black !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+/* skill section */
+
+.my_skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skill-content {
+    text-align: left;
+    padding: 0 3rem;
+}
+
+.skill-content h2{
+    margin-top: -10rem;
+    font-size: 3.4rem;
+    line-height: 6rem;
+}
+
+.skill-content h3{
+    font-size: 1.83rem;
+}
+.skill-content p{
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns based on your icons */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 253, 253); /* Add background */
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item img {
+    width: 50%; /* Adjust the icon size */
+    height: auto;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* My work Project Section */
+
+.projects{
+    margin: 5rem;
+}
+
+.prject_heading{
+    text-align: center;
+    font-size: 3.7rem;
+    margin-top: 10rem;
+}
+
+.projects_container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    display: flex;            /* Use flexbox for project box */
+    flex-direction: column;   /* Arrange children in a column */
+    align-items: center;      /* Center align children horizontally */
+    width: 400px;            /* Set a fixed width for project boxes */
+    height: 500px;
+    margin: 10px;            /* Space between boxes */
+    padding: 20px;           /* Padding inside boxes */
+    background-color: #fcfcfc; /* Optional: Background color for project boxes */
+    border-radius: 8px;      /* Optional: Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-box img {
+    width: 100%;             /* Make the image responsive */
+    height: auto;            /* Maintain aspect ratio */
+    border-radius: 5px;      /* Optional: Rounded corners for images */
+    margin-bottom: 10px;     /* Space between image and text */
+}
+.project-box h4{
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding-right: 2rem;
+}
+
+
+/* Default styles for light mode */
+body.light-mode {
+    background-color: white; /* Light mode background color */
+    color: black;            /* Light mode text color */
+}
+
+.project-box {
+    background-color: #f9f9f9; /* Light mode project box background */
+    color: black;              /* Light mode text color */
+    padding: 20px;            /* Ensure some padding */
+    border-radius: 8px;       /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Styles for dark mode */
+body.dark-mode {
+    background-color: #121212; /* Dark mode background color */
+    color: white;              /* Dark mode text color */
+}
+
+body.dark-mode .project-box {
+    background-color: #433f3f; /* Dark mode project box background */
+    color: white;              /* Dark mode text color for project box */
+    box-shadow:
+        0px 0px 25px var(--shadow-light),
+        0px 0px 25px var(--shadow-medium),
+        0px 0px 25px var(--shadow-dark);
+}
+.project-box h3{
+    text-align: left; 
+    width: 100%; 
+    margin: 1rem; 
+    color: rgb(239, 174, 11); 
+}
+
+.tech_stack{
+    color: #121212;
+}
+body.dark-mode .tech_stack{
+    color: white;
+}
+
+
+
+/* Project Links */
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;  /* Space between the links */
+}
+
+.project-links a {
+    text-decoration: none;
+    color: rgb(6, 99, 212);  /* Light mode color for links */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #ebe4e4; /* Light mode background color for link buttons */
+}
+
+.project-links a i {
+    margin-right: 0.5rem;  /* Space between icon and text */
+    font-size: 1.2rem;
+}
+
+/* Hover effect for links */
+.project-links a:hover {
+    color: rgb(0, 120, 120);
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Dark mode for project links */
+body.dark-mode .project-links a {
+    color: #ffd700; /* Dark mode color for links */
+    background-color: #3a3a3a;  /* Dark mode background color for link buttons */
+}
+
+body.dark-mode .project-links a:hover {
+    color: #ffc107; /* Dark mode hover text color */
+    background-color: #525252; /* Dark mode hover background */
+}
+
+
+
+
+
+/* Contact section style */
+
+.contact{
+    text-align: center;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0d87d9;
+}
+
+.contact-item i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Hover effect for GitHub link */
+.contact-item a {
+    text-decoration: none;
+    color: #0d87d9;
+}
+
+.contact-item a:hover {
+    color: #555;
+}
+
+
+
+.contact form{
+    max-width: 60rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0.8rem;
+}
+
+/* .contact form .input-box input
+
+{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    margin: 0.7rem 0;
+    resize: none;
+} */
+
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.2rem 0.35rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    resize: none;
+}
+
+.contact form textarea{
+    width: 96%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    margin: 0.7rem 0;
+}
+
+
+.submit_btn {
+    padding: 0.8rem 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5rem;
+    background-color: #0d87d9;
+    color: white;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit_btn:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+/* footer section style */
+
+/* footer{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(205, 205, 205);
+} */
+
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--footer-bg-color, rgb(205, 205, 205));
+    color: var(--footer-text-color, black);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode (Default) */
+:root {
+    --footer-bg-color: rgb(205, 205, 205); /* Light background */
+    --footer-text-color: black; /* Dark text */
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --footer-bg-color: #353333; 
+        --footer-text-color: white; 
+    }
+}
+
+
+/* Media quesries for different screen size */
+
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+
+    /* Navbar and Menu Icon */
+    .navbar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: black; /* Color for light mode */
+        z-index: 1001;
+    }
+
+    body.dark-mode #menu-icon {
+        color: white; /* Color for dark mode */
+    }
+
+
+    .menu-open .navbar a:hover {
+        background-color: #e2700c; /* Change the background color on hover */
+        transform: scale(1.05); /* Slightly enlarge the item on hover */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    }
+
+    /* Ensure header layout adapts for small screens */
+    .header {
+        justify-content: space-between;
+    }
+
+    .home {
+        flex-direction: column;
+        margin-top: 100px; /* Adjust space on smaller screens */
+    }
+
+    .home-content {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center text */
+        margin-top: 1rem;
+    }
+
+    .home-content h1, .home-content h3 {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+        height: 60vw; /* Adjust image size */
+    }
+
+    /* About section */
+
+    .about{
+        margin-top: -10rem;
+        flex-direction: column;
+        /* margin: -2rem 5rem; */
+    }
+
+    .about-content h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .about-content h3{
+        margin-top: 1rem;
+        font-size: 2.1rem;
+    }
+    .about_img img {
+        width: 70vw;
+        height: auto;
+        margin: auto;
+        margin-top: -2rem;
+    }
+
+    .about-content {
+        padding: 0;
+        text-align: center;
+    }
+
+
+
+
+    /* Skills section */
+
+    .my_skill{
+        
+        flex-direction: column;
+    }
+
+    .skill-content{
+        margin-top: 4rem;
+        text-align: center;
+        
+    }
+    .skill-content h2{
+        font-size: 2.8rem;
+    }
+    .skills-grid {
+        margin-top: 2rem;
+        grid-template-columns: repeat(4, 1fr); /* Fewer columns */
+        gap: 10px;
+    }
+
+
+    /* Projects section */
+    .projects_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prject_heading{
+        font-size: 2.8rem;
+    }
+    .project-box {
+        width: 60vw; /* Set width to adapt on small screens */
+        height: 70vw;
+    }
+    
+
+    
+    /* Contact form adjustments */
+
+    .contact .contact_heading{
+        font-size: 2.8rem;
+    }
+    .contact form .input-box input {
+        width: 100%; /* Make inputs stack vertically */
+    }
+
+    .contact form textarea {
+        width: 95%; /* Make textarea take full width */
+    }
+}
+
+
+
+/* Further reduce layout for very small screens */
+
+@media (max-width: 480px) {
+
+    .header{
+        width: 122vw;
+    }
+    .home{
+        margin-left:5rem;
+    }
+
+    .home-content h1, .home-content h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    /* About section */
+
+    .about{
+        margin-left: 5rem;
+    }
+    .about-content{
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .about-content h2{
+        font-size: 2rem;
+    }
+
+    .about-content h3{
+
+        font-size: 1.7rem;
+    }
+
+    /* Skills Section */
+
+    .my_skill{
+        margin-left: 4rem;
+    }
+    .skill-content h2{
+        font-size: 2rem;
+    }
+    .skill-content h3{
+        font-size: 1.5rem;
+    }
+
+    /* Projct section  */
+
+    .projects h2{
+        font-size: 2rem;
+        margin-left: 4rem;
+    }
+    .projects_container {
+        margin-left: 2rem;
+        flex-direction: column;
+    }
+
+    .project-box {
+        width: auto;
+        height: auto;
+    }
+
+    /* contact section  */
+
+    .contact{
+        margin-left: 3rem;
+    }
+    .contact .contact_heading{
+        font-size: 2rem;
+    }
+
+    .contact form .input-box input {
+        width: 100%; /* Make inputs stack vertically */
+    }
+
+    .contact form textarea {
+        width: 92%; /* Make textarea take full width */
+    }
+
+    .contact form .submit_btn{
+        padding:0.8rem;
+        font-size: 1.3rem;
+    }
+    
+
+    /* Adjust footer */
+    footer {
+        padding: 25px;
+        width: 122vw;
+    }
+}
+
+/* Ensure no horizontal scroll bar */
+/* body {
+    overflow-x: hidden;
+} */
+
+/* Toggle menu functionality */
+.menu-open .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    background-color: #333;
+    padding: 20px;
+}
+
+.menu-open .navbar a {
+    color: white;
+    margin: 10px 0;
+}
+
+.menu-open .navbar a:hover {
+    background-color: #e2700c; /* Change the background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+
+/* Optional animation for navbar links */
+.menu-open .navbar a {
+    animation: fade-in 0.5s ease;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
