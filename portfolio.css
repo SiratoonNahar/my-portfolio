@@ -698,16 +698,16 @@ footer {
 
     .home {
         flex-direction: column;
-        margin-top: 100px; 
+        margin-top: 5rem; 
     }
 
     .home-content {
-        margin-left: 0; 
         text-align: center; 
-        margin-top: 1rem;
+        margin-top: 5rem;
+        margin-right: 5rem;
     }
 
-    .home-content h1, .home-content h3 {
+    .home-content h1{
         font-size: 2.8rem;
         line-height: 3.5rem;
     }
@@ -727,11 +727,15 @@ footer {
 
     .about-content h2{
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
     .about-content h3{
         margin-top: 1rem;
-        font-size: 2.1rem;
+        font-size: 2.3rem;
+    }
+    .about-content p{
+        font-size: 1.5rem;
+        padding: 0rem 1rem;
     }
     .about_img img {
         width: 70vw;
@@ -763,10 +767,16 @@ footer {
     .skill-content h2{
         font-size: 2.8rem;
     }
+
+    .skill-content p{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
     .skills-grid {
         margin-top: 2rem;
         grid-template-columns: repeat(4, 1fr); 
-        gap: 10px;
+        gap: 5rem;
     }
 
 
