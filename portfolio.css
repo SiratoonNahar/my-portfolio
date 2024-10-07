@@ -698,12 +698,12 @@ footer {
 
     .home {
         flex-direction: column;
-        margin-top: 100px; /* Adjust space on smaller screens */
+        margin-top: 100px; 
     }
 
     .home-content {
-        margin-left: 0; /* Remove left margin */
-        text-align: center; /* Center text */
+        margin-left: 0; 
+        text-align: center; 
         margin-top: 1rem;
     }
 
@@ -714,7 +714,7 @@ footer {
 
     .home-img img {
         width: 60vw;
-        height: 60vw; /* Adjust image size */
+        height: 60vw; 
     }
 
     /* About section */
