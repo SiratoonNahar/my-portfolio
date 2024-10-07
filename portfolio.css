@@ -7,7 +7,7 @@
     font-family: "Roboto", sans-serif;
 }
 body {
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: hidden;
 }
 
 
@@ -189,10 +189,7 @@ span {
 
 .multiple-text {
     white-space: nowrap;
-    /* border-right: 1px solid black; */
-    /* Blinking cursor */
     overflow: hidden;
-    /* Hides overflowing text */
     display: inline-block;
     margin-bottom: 2rem;
 }
@@ -385,7 +382,7 @@ body.dark-mode .fa-brands{
 
 .skills-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust columns based on your icons */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -397,7 +394,7 @@ body.dark-mode .fa-brands{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(253, 253, 253); /* Add background */
+    background-color: rgb(253, 253, 253); 
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -434,23 +431,23 @@ body.dark-mode .fa-brands{
 }
 
 .project-box {
-    display: flex;            /* Use flexbox for project box */
-    flex-direction: column;   /* Arrange children in a column */
-    align-items: center;      /* Center align children horizontally */
-    width: 400px;            /* Set a fixed width for project boxes */
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
+    width: 400px;            
     height: 500px;
-    margin: 10px;            /* Space between boxes */
-    padding: 20px;           /* Padding inside boxes */
-    background-color: #fcfcfc; /* Optional: Background color for project boxes */
-    border-radius: 8px;      /* Optional: Rounded corners */
+    margin: 10px;            
+    padding: 20px;           
+    background-color: #fcfcfc; 
+    border-radius: 8px;      
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .project-box img {
-    width: 100%;             /* Make the image responsive */
-    height: auto;            /* Maintain aspect ratio */
-    border-radius: 5px;      /* Optional: Rounded corners for images */
-    margin-bottom: 10px;     /* Space between image and text */
+    width: 100%;             
+    height: auto;            
+    border-radius: 5px;      
+    margin-bottom: 10px;     
 }
 .project-box h4{
     font-size: 1.5rem;
@@ -461,27 +458,27 @@ body.dark-mode .fa-brands{
 
 /* Default styles for light mode */
 body.light-mode {
-    background-color: white; /* Light mode background color */
-    color: black;            /* Light mode text color */
+    background-color: white; 
+    color: black;            
 }
 
 .project-box {
-    background-color: #f9f9f9; /* Light mode project box background */
-    color: black;              /* Light mode text color */
-    padding: 20px;            /* Ensure some padding */
-    border-radius: 8px;       /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    background-color: #f9f9f9; 
+    color: black;              
+    padding: 20px;            
+    border-radius: 8px;       
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 /* Styles for dark mode */
 body.dark-mode {
-    background-color: #121212; /* Dark mode background color */
-    color: white;              /* Dark mode text color */
+    background-color: #121212; 
+    color: white;              
 }
 
 body.dark-mode .project-box {
-    background-color: #433f3f; /* Dark mode project box background */
-    color: white;              /* Dark mode text color for project box */
+    background-color: #433f3f; 
+    color: white;              
     box-shadow:
         0px 0px 25px var(--shadow-light),
         0px 0px 25px var(--shadow-medium),
@@ -508,41 +505,41 @@ body.dark-mode .tech_stack{
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;  /* Space between the links */
+    gap: 1.5rem;  
 }
 
 .project-links a {
     text-decoration: none;
-    color: rgb(6, 99, 212);  /* Light mode color for links */
+    color: rgb(6, 99, 212);  
     font-weight: 600;
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background-color: #ebe4e4; /* Light mode background color for link buttons */
+    background-color: #ebe4e4; 
 }
 
 .project-links a i {
-    margin-right: 0.5rem;  /* Space between icon and text */
+    margin-right: 0.5rem;  
     font-size: 1.2rem;
 }
 
 /* Hover effect for links */
 .project-links a:hover {
     color: rgb(0, 120, 120);
-    background-color: #e0e0e0; /* Slightly darker background on hover */
+    background-color: #e0e0e0; 
 }
 
 /* Dark mode for project links */
 body.dark-mode .project-links a {
-    color: #ffd700; /* Dark mode color for links */
-    background-color: #3a3a3a;  /* Dark mode background color for link buttons */
+    color: #ffd700; 
+    background-color: #3a3a3a;  
 }
 
 body.dark-mode .project-links a:hover {
-    color: #ffc107; /* Dark mode hover text color */
-    background-color: #525252; /* Dark mode hover background */
+    color: #ffc107; 
+    background-color: #525252; 
 }
 
 /* Contact section style */
@@ -601,17 +598,6 @@ body.dark-mode .project-links a:hover {
     margin: 0.8rem;
 }
 
-/* .contact form .input-box input
-
-{
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.6rem;
-    border-radius: 0.8rem;
-    border: 1px solid black;
-    margin: 0.7rem 0;
-    resize: none;
-} */
 
 .contact form .input-box input{
     width: 49%;
@@ -649,22 +635,7 @@ body.dark-mode .project-links a:hover {
     background-color: #555;
 }
 
-
-
-
-
-
 /* footer section style */
-
-/* footer{
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 40px 0;
-    background-color: rgb(205, 205, 205);
-} */
-
 
 footer {
     text-align: center;
@@ -679,8 +650,8 @@ footer {
 
 /* Light Mode (Default) */
 :root {
-    --footer-bg-color: rgb(205, 205, 205); /* Light background */
-    --footer-text-color: black; /* Dark text */
+    --footer-bg-color: rgb(205, 205, 205); 
+    --footer-text-color: black; 
 }
 
 /* Dark Mode */
@@ -705,19 +676,19 @@ footer {
         display: block;
         font-size: 30px;
         cursor: pointer;
-        color: black; /* Color for light mode */
+        color: black; 
         z-index: 1001;
     }
 
     body.dark-mode #menu-icon {
-        color: white; /* Color for dark mode */
+        color: white; 
     }
 
 
     .menu-open .navbar a:hover {
-        background-color: #e2700c; /* Change the background color on hover */
-        transform: scale(1.05); /* Slightly enlarge the item on hover */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        background-color: #e2700c; 
+        transform: scale(1.05); 
+        transition: background-color 0.3s ease, transform 0.3s ease; 
     }
 
     /* Ensure header layout adapts for small screens */
@@ -794,7 +765,7 @@ footer {
     }
     .skills-grid {
         margin-top: 2rem;
-        grid-template-columns: repeat(4, 1fr); /* Fewer columns */
+        grid-template-columns: repeat(4, 1fr); 
         gap: 10px;
     }
 
@@ -808,7 +779,7 @@ footer {
         font-size: 2.8rem;
     }
     .project-box {
-        width: 60vw; /* Set width to adapt on small screens */
+        width: 60vw; 
         height: 70vw;
     }
     
@@ -820,11 +791,15 @@ footer {
         font-size: 2.8rem;
     }
     .contact form .input-box input {
-        width: 100%; /* Make inputs stack vertically */
+        width: 22rem; 
     }
 
     .contact form textarea {
-        width: 95%; /* Make textarea take full width */
+        width: 45rem; 
+    }
+
+    .contact form .submit_btn{
+        padding:1rem 3rem;
     }
 }
 
@@ -838,7 +813,7 @@ footer {
         width: 100vw;
     }
     .home{
-        margin-left:2rem;
+        margin-left:1rem;
     }
 
     .home-content h1{
@@ -886,7 +861,6 @@ footer {
     /* Skills Section */
 
     .my_skill{
-        /* margin-left: 0.8rem; */
         margin-top: -10rem;
         flex-direction: column;
     }
