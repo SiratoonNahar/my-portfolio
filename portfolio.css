@@ -33,7 +33,7 @@ body.dark-mode .lst_nme {
 }
 
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 10px;
@@ -574,7 +574,9 @@ body.dark-mode .project-links a:hover {
     margin-right: 0.5rem;
     font-size: 1.5rem;
 }
-
+.contact-item .fa-github{
+    margin-top: -5rem;
+}
 /* Hover effect for GitHub link */
 .contact-item a {
     text-decoration: none;
