@@ -871,7 +871,7 @@ footer {
     /* Skills Section */
 
     .my_skill{
-        margin-top: -10rem;
+        margin-top: -15rem;
         flex-direction: column;
     }
     .skill-content h2{
@@ -882,13 +882,16 @@ footer {
         text-align: center;
     }
     .skill-content p{
-        font-size: 0.8rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
     }
 
     .skills-grid{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
     }
+
 
     /* Projct section  */
     .projects{
@@ -901,12 +904,12 @@ footer {
     }
     .projects_container {
         margin-top: 2.5rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
         flex-direction: column;
     }
 
     .project-box {
-        width: auto;
+        width: 19.5rem;
         height: auto;
     }
 
