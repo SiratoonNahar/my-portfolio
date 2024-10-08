@@ -917,6 +917,9 @@ footer {
         width: 19.1rem;
         height: auto;
     }
+    .project-links .fa-github{
+        margin-top: 0.1rem;
+    }
 
 
     /* contact section  */
