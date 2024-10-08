@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to download the resume
 function downloadResume() {
-    fetch('https://github.com/SiratoonNahar/SiratoonNahar/blob/master/Siratoon_Full_Stack_WebDeveloper.pdf')
+    fetch('https://siratoonnahar.github.io/SiratoonNahar/SiratoonNahar-FullStackWebDeveloper.pdf')
         .then(response => response.blob()) // Convert response to Blob
         .then(blob => {
             const url = window.URL.createObjectURL(blob); // Create a URL for the blob
