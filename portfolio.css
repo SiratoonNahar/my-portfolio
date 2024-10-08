@@ -426,20 +426,18 @@ body.dark-mode .fa-brands{
 
 .projects_container{
     margin-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .project-box {
     display: flex;            
     flex-direction: column;   
     align-items: center;      
-    width: 400px;            
-    height: 500px;
-    margin: 10px;            
-    padding: 20px;           
+    width: 20rem;            
+    height: 33rem;
+    margin: 2rem;            
+    padding: 5rem;           
     background-color: #fcfcfc; 
     border-radius: 8px;      
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -912,7 +910,9 @@ footer {
     .projects_container {
         margin-top: 2.5rem;
         margin-left: 3rem;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.8rem;
     }
 
     .project-box {
