@@ -909,14 +909,14 @@ footer {
     }
     .projects_container {
         margin-top: 2.5rem;
-        margin-left: 3rem;
+        margin-left: 0.6rem;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 0.8rem;
     }
 
     .project-box {
-        width: 19.1rem;
+        width: auto;
         height: auto;
     }
     .project-links .fa-github{
