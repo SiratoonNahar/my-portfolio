@@ -909,7 +909,7 @@ footer {
     }
     .projects_container {
         margin-top: 2.5rem;
-        margin-left: 0.6rem;
+        margin-left: 1rem;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 0.8rem;
