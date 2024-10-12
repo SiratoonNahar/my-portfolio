@@ -821,7 +821,7 @@ footer {
 
 /* Further reduce layout for very small screens */
 
-@media (max-width: 480px) {
+@media (max-width: 530px) {
 
     .header{
         width: 100vw;
